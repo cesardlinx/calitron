@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>CALI & TRON</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="keywords" content="CALI&TRON, CALI&TRON service, cailbración, mantenimiento preventivo, mantenimiento correctivo, turbidímetros, ups, carcelén, electrónica, equipos de laboratorio " />
+        <!-- STYLES -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- JS -->
+        <script defer src="js/jquery.js"></script>
+        <script defer src="js/TweenMax.min.js"></script>
+        <script defer src="js/popper.min.js"></script>
+        <script defer src="js/fontawesome/all.js"></script>
+        <script defer src="js/bootstrap.min.js"></script>
+        <script defer src="js/app.js"></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFiNt_hYy-CLje9MZtLDGRKD-81GaJrio&callback=initMap" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <!-- Facebook script start here -->
+        <div id="fb-root"></div>
+        <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <!-- Facebook script ends here -->
+
+        <!-- header starts here -->
+        <header>
+            <div class="telefono-correo">
+                <ul>
+                    <li>Llámanos: (593-2) 248 - 1539</li>
+                    <li>Email: info@calitronservice.com</li>
+                </ul>
+            </div>
+            <nav class="navbar-custom">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="CALI&TRON" />
+                        <p>CALI & TRON SERVICE</p>
+                        <!-- <small>CALIBRACIÓN Y MANTENIMIENTO</small> -->
+                    </a>
+                </div>
+
+                <div class="options stroke">
+                    <ul class="navbar-items">
+                        <li class="navbar-item">
+                            <a href="#inicio" class="navbar-link">Inicio</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#productos" class="navbar-link">Productos</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#servicios" class="navbar-link">Servicios</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#empresa" class="navbar-link">Empresa</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#ubicacion" class="navbar-link">Ubicación</a>
+                        </li>
+                    </ul>
+                </div>
+                <button id="menu-button"><span class="fas fa-bars"></span></button>
+            </nav>
+        </header>
+        <!-- header ends here -->
+
+        <div class="main-container" id="inicio">
+            <!-- carousel stars here -->
+            <div id="carouselCalitron" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselCalitron" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselCalitron" data-slide-to="1"></li>
+                    <li data-target="#carouselCalitron" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/slider/1.JPG" alt="Mantenimiento">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h2>Mantenimiento</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slider/2.JPG" alt="Calibración">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h2>Calibración</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slider/3_1.jpg" alt="Electrónica">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h2>Electrónica</h2>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselCalitron" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselCalitron" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- carousel ends here -->
+
+            <!-- products stars here -->
+            <section id="productos" class="section-container">
+                <div class="section-wrapper">
+                    <h2 class="section-title">Productos</h2>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <img class="prod-img-top" src="img/productos/componentes_inicio.png" alt="Componentes">
+                            <div>
+                                <p class="prod-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nesciunt!</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <img class="prod-img-top" src="img/productos/turbidimetro_apera.jpg" alt="Turbidímetro">
+                            <div>
+                                <p class="prod-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ad.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <img class="prod-img-top" src="img/productos/ups_apc.png" alt="UPCs">
+                            <div>
+                                <p class="prod-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ad.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- products ends here -->
+
+            <!-- products banner stars here -->
+            <section class="parallax-window" id="prod-parallax">
+                <div class="parallax-info">
+                    <h2>VENTA DE EQUIPOS</h2>
+                    <p>Productos de calidad comprobada</p>
+                </div>
+            </section>
+            <!-- products banner ends here -->
+
+            <!-- calibration stars here -->
+            <section id="servicios" class="calibracion section-container">
+                <div class="section-wrapper">
+                    <h2 class="section-title">Calibración de Equipos</h2>
+                    <div class="section-row">
+
+                        <div class="section-text">
+                            <ul>
+                                <li>PH-metros</li>
+                                <li>Conductivímetros</li>
+                                <li>Espectrofotómetros</li>
+                                <li>Colorímetros</li>
+                                <li>Turbidímetros</li>
+                                <li>Termómetros</li>
+                            </ul>
+                        </div>
+
+                        <div class="section-img">
+                            <img src="img/calibracion.jpg" alt="calibracion">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- calibration ends here -->
+
+            <!-- maintenance stars here -->
+            <section id="mantenimiento" class="section-container">
+                <div class="section-wrapper">
+                    <h2 class="section-title">Mantenimiento</h2>
+                    <div class="section-row">
+
+                        <div class="section-text">
+
+                            <ul>
+                                <li>Turbidímetros</li>
+                                <li>Espectrofotómetros y Fotómetros</li>
+                                <li>Ph-metros, Multiparámetros</li>
+                                <li>Estufas e incubadoras</li>
+                                <li>Reactores térmicos</li>
+                                <li>Colorímetros</li>
+                                <li>Balanzas electrónicas</li>
+                                <li>Sondas de prueba</li>
+                                <li>Autoclaves</li>
+                                <li>Planchas agitadoras</li>
+                                <li>Planchas de calentamiento</li>
+                                <li>Vórtex</li>
+                                <li>Centrífugas</li>
+                                <li>Microscopios</li>
+                            </ul>
+                        </div>
+
+                        <div class="section-img">
+                            <img src="img/mantenimiento.JPG" alt="mantenimiento">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- maintenance ends here -->
+
+            <!-- company banner starts here -->
+            <section class="parallax-window" id="empresa">
+                <div class="parallax-info">
+                    <h2>NUESTRA EMPRESA</h2>
+                </div>
+            </section>
+            <!-- company banner ends here -->
+
+            <!-- company starts here -->
+            <section id="empresa-container" class="section-container">
+                <div class="section-wrapper ">
+                    <article>
+                        <h3>Misión</h3>
+                        <p>
+                            La misión de CALI & TRON SERVICE es brindar el mejor servicio de calibración
+                            y mantenimiento de equipos de laboratorio a nivel nacional, garantizando una
+                            excelente calidad, ya que se consolida como una empresa responsable y
+                            comprometida con sus clientes.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Visión</h3>
+                        <p>
+                            La visión de CALI & TRON SERVICE es constituirse como una empresa líder en
+                            la calibración de equipos de laboratorio aplicando a cabalidad el sistema de
+                            gestión de calidad ISO/IEC 17025, y posicionarse como una empresa
+                            proveedora de servicios de calidad en el área de electrónica y metrología.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <!-- company ends here -->
+
+            <!-- staff starts here -->
+            <section id="personal" class="section-container">
+                <div class="section-wrapper">
+                    <h2 class="section-title">Personal</h2>
+
+                    <div class="section-row">
+                        <div class="section-img">
+                            <img src="img/personal.jpg" alt="personal">
+                        </div>
+                        <div class="section-text">
+                            <p>
+                                CALI&TRON SERVICE cuenta con personal competente y
+                                calificado para el mantenimiento y/o calibración de equipos,
+                                evaluación de resultados y elaboración de informes y certificados de calibración.
+                            </p>
+                            <p>
+                                Para asegurar la competencia del personal,
+                                se maneja un plan anual de capacitación,
+                                entrenamiento y formación, dependiendo de
+                                las necesidades presentadas por el personal,
+                                descritas en el procedimiento de “Formación
+                                del personal” del Manual de Calidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- staff ends here -->
+
+            <!-- location starts here -->
+            <section id="ubicacion" class="section-container">
+                <section class="section-wrapper">
+                    <h2 class="section-title">Ubicación</h2>
+
+                     <section class="parallax-window" id="contacto-parallax">
+                        <div class="parallax-info">
+                            <h2>contacta con nosotros</h2>
+                            <div class="address">
+                                <h3>Local:</h3>
+                                <p>Av. Jaime Roldós Aguilera N80-56 y Antón Núñez</p>
+                                <p>(593-2) 248-1539</p>
+                            </div>
+                        </div>
+                        <div id="map"></div>
+                    </section>
+
+                </section>
+            </section>
+            <!-- location ends here -->
+
+            <!-- footer starts here -->
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="container-fluid row">
+                        <div class="col-md-4">
+
+                            <div class="row">
+                                <div class="col-6 col-sm-6 text-right">
+                                    <img src="img/logo.png" alt="CALI&TRON" />
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <ul class="footer-links">
+                                        <li><a href="#inicio">Inicio</a></li>
+                                        <li><a href="#productos">Productos</a></li>
+                                        <li><a href="#servicios">Servicios</a></li>
+                                        <li><a href="#empresa">Empresa</a></li>
+                                        <li><a href="#ubicacion">Ubicación</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-5">
+                            <div class="social">
+                                <h5 class="siguenos">Síguenos en:</h5>
+                                <div class="fb-page" data-href="https://www.facebook.com/calitronservice/" data-small-header="false" data-adapt-container-width="true"
+                                    data-hide-cover="false" data-show-facepile="true">
+                                    <blockquote cite="https://www.facebook.com/calitronservice/" class="fb-xfbml-parse-ignore">
+                                        <a href="https://www.facebook.com/calitronservice/">Cali &amp; Tron Service</a>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacto col-sm-12 col-md-3">
+                            <div class="contacto-footer row">
+                                <div class="col-6 col-md-12 contacto-item">
+                                    <h5 class="contacto-header">Visítanos:</h5>
+                                    <p>Av. Jaime Roldós Aguilera</p>
+                                    <p>N80-56 y Antón Núñez</p>
+                                </div>
+                                <div class="col-6 col-md-12 contacto-item">
+                                    <h5 class="contacto-header">Contáctanos:</h5>
+                                    <p class="correo">info@calitronservice.com</p>
+                                    <p>(593-2) 248-1539</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright text-center">
+                        <p>&copy; 2018 CALI&TRON SERVICE <em>Todos los derechos reservados.</em></p>
+                    </div>
+                    <a href="#" class="to-top" title="Ir al Inicio"><span id="chevron" class="fas fa-chevron-up"></span></a>
+                </div>
+            </footer>
+            <!-- location ends here -->
+        </div>
+        <!-- Main container ends here -->
+    </body>
+    <!-- scripts webchat starts here -->
+    <link href="https://snatchbot.me/sdk/webchat.css" rel="stylesheet" type="text/css">
+    <script src="https://snatchbot.me/sdk/webchat.min.js"></script>
+    <script> Init('?botID=21415&amp;appID=', 400, 400, 'https://dvgpba5hywmpo.cloudfront.net/media/image/1529683574J4pC2vwp24', 'bubble', '#00AFF0', 90, 90, 62.99999999999999, '', '1', '#FFFFFF', ); /* for authentication of its users, you can define your userID (add &amp;userID={login}) */ </script>
+    <!-- scripts webchat ends here -->
+</html>
+

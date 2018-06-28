@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    background: #fff;
+    font-family: "Monserrat", Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Teléfono - Correo */
+header .telefono-correo {
+    background: #34495e;
+    color: #fff;
+    height: 2rem;
+    font-size: .9rem;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+
+header .telefono-correo ul {
+    height: 2rem;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .telefono-correo ul li{
+    display: inline-block;
+    padding: 0 3rem;
+}
+
+header .telefono-correo ul li:nth-child(1) {
+    border-right: 1px solid #aaa;
+}
+
+
+/*Navbar*/
+
+.navbar-custom {
+    background: #fff;
+    color: #fff;
+    height: 4.375rem;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-shadow {
+    -webkit-box-shadow: 0px 4px 21px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 21px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 21px -1px rgba(0, 0, 0, 0.75);
+}
+
+/*Logo*/
+
+.navbar-custom .logo {
+    display: block;
+    float: left;
+    width: 40%;
+    height: 100%;
+    background: #2980b9;
+    font-size: 1.2rem;
+}
+
+.navbar-custom .logo a {
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+}
+
+.navbar-custom .logo p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    display: inline-block;
+    line-height: 4.5rem;
+}
+
+.navbar-custom .logo small {
+    font-size: .8rem;
+    display: block;
+}
+
+.navbar-custom .logo img {
+    display: inline-block;
+    width: 4.5rem;
+    margin-right: .7em;
+    margin-top: .2em;
+    vertical-align: top;
+}
+
+/*Navbar Menu*/
+
+.navbar-custom .options {
+    float: left;
+    width: 50%;
+    margin-left: 8%;
+    background: #fff;
+}
+
+.navbar-custom .options .navbar-items {
+    list-style: none;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar-custom .options .navbar-items .navbar-item {
+    float: left;
+    width: 20%;
+    height: 4.375rem;
+}
+
+.navbar-item .navbar-link {
+    text-decoration: none;
+    display: block;
+    line-height: 70px;
+    color: #2980b9;
+    font-size: 1rem;
+    transition: all ease 300ms;
+    font-family: "Orbitron", Helvetica, sans-serif;
+
+}
+
+.navbar-item .navbar-link:hover {
+    color: #fff;
+    background: #2980b9;
+}
+
+/* Menu Button */
+
+#menu-button {
+    background: #2980b9;
+    font-size: 1.3rem;
+    border: none;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    position: absolute;
+    top: 0.683em;
+    right: 1em;
+    border: 1px solid #eee;
+}
+
+
+/* stroke effect */
+
+div.stroke ul li a {
+    position: relative;
+}
+
+div.stroke ul li a:after{
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    background: #2980b9;
+    height: 1px;
+    transition: all ease 400ms;
+
+}
+
+div.stroke ul li a:hover:after {
+    width: 70%;
+    background: #fff;
+}
+
+/****************
+    CONTENT
+*****************/
+
+/* Main Container */
+.main-container {
+    position: relative;
+    top: 6.375rem;
+}
+
+/* Carousel */
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 2em;
+    height: 2em;
+}
+
+.carousel-caption {
+    color: #154c71;
+    background: rgba(189, 195, 199, 0.5);
+    text-shadow: white 0.1em 0.1em 0.3em;
+    right: 0;
+    left: 0;
+    height: 30%;
+}
+
+.carousel-caption h2 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+/* Parallax */
+
+.parallax-window {
+    height: 25rem;
+    min-height: 25rem;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-backface-visibility: hidden; /*fix para chrome*/
+}
+
+
+div.parallax-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background: rgba(41, 128, 185, 0.6);
+
+}
+
+div.parallax-info h2{
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+div.parallax-info p {
+    font-size: 1.5rem;
+}
+
+#prod-parallax {
+    background-image: url('../img/banner.png');
+}
+
+#empresa {
+    background-image: url('../img/nuestra-empresa.jpg');
+}
+
+#contacto-parallax {
+    background-image: url('../img/local.JPG');
+}
+
+/* Estilos generales para las secciones */
+
+.section-container {
+    text-align: center;
+    color: #031623;
+    margin-bottom: 3rem;
+}
+
+.section-wrapper {
+    width: 90%;
+    border-top: 1px solid #ddd;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h2.section-title {
+    font-family: "Orbitron", Helvetica, sans-serif;
+    margin-bottom: 2rem;
+    color: #154c71;
+    padding-top: 2rem;
+}
+
+.section-wrapper .section-img {
+    width: 20rem;
+    position: relative;
+    left: 30rem;
+    opacity: 0;
+}
+
+.section-wrapper .section-img img {
+    display: block;
+    width: 100%;
+}
+
+.section-wrapper .section-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.section-wrapper .section-text {
+    text-align: left;
+    font-size: 1.5rem;
+    width: 20rem;
+    padding-left: 1rem;
+    position: relative;
+    right: 30rem;
+}
+
+
+/* Nuestros Productos */
+
+
+#productos .prod-img-top {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#productos .prod-text {
+    position: relative;
+    top: 15rem;
+    opacity: 0;
+}
+
+
+/* Calibracion */
+
+.calibracion .section-text ul li{
+    margin-bottom: 2rem;
+}
+
+/* Personal */
+
+#personal .section-wrapper .section-text {
+    font-size: 1.1rem;
+    padding: 0 0 1rem 1rem;
+    opacity: 0;
+    position: relative;
+    right: 30rem;
+    width: 22rem;
+    text-align: justify;
+}
+
+#peronsal .section-wrapper .section-img {
+    opacity: 0;
+    position: relative;
+    left: 30rem;
+}
+
+/* Empresa */
+
+#empresa-container article {
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: #031623;
+}
+
+#empresa-container article h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #154c71;
+}
+
+
+/* Ubicación */
+
+#ubicacion .parallax-info {
+    padding: 3rem;
+}
+
+#ubicacion .address {
+    text-align: left;
+    position: relative;
+    top: 15rem;
+    opacity: 0;
+}
+
+#ubicacion .address h3 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+#ubicacion .address p {
+     font-size: 1.2rem;
+     margin-top: 1rem;
+}
+
+/****************
+    EXTRAS
+*****************/
+
+/* Map */
+
+
+#map {
+    width: 40%;
+    height: 20rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+}
+
+.gm-style-iw {
+    color: #000;
+}
+
+
+/* Chatbot */
+
+span.snatch-button a.lwc-chat-button {
+    width: 70px !important;
+    height: 70px !important;
+}
+
+/****************
+    FOOTER
+*****************/
+
+/* Footer */
+
+footer {
+    background: #2c3e50;
+    padding-top: 20px;
+    clear: both;
+}
+
+
+.footer-wrapper {
+    color: #ecf0f1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-wrapper ul.footer-links {
+    list-style-type: none;
+}
+
+.footer-wrapper ul.footer-links li {
+    padding-bottom: 1rem;
+}
+
+
+.footer-wrapper ul.footer-links li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-wrapper ul.footer-links li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-wrapper img {
+    display: inline-block;
+    width: 5rem;
+}
+
+div.footer-wrapper div.contacto div.contacto-item {
+    margin-bottom: 2.3rem;
+}
+
+div.footer-wrapper div.contacto h5.contacto-header {
+    margin-bottom: 1.5rem;
+    font-family: "Orbitron", Helvetica, sans-serif;
+}
+
+div.footer-wrapper .contacto .contacto-item .correo {
+    color: #3498db;
+}
+
+div.footer-wrapper .siguenos {
+    font-family: "Orbitron", Helvetica, sans-serif;
+}
+
+div.footer-wrapper .copyright {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ccc;
+}
+
+/* Boton to top */
+
+footer .to-top {
+    position: fixed;
+    color: #693;
+    display: block;
+    font-size: 3rem;
+    width: 1.2em;
+    height: 1.2em;
+    bottom: 60px;
+    left: 29px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+#chevron {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/***********************
+    RESPONSIVE DESIGN
+************************/
+
+/* Tablets */
+
+@media only screen and (max-width: 991px) {
+
+    /* Navbar */
+
+    .navbar-custom {
+        height: 8.75rem;
+    }
+
+    .navbar-custom .logo {
+        height: 4.375rem;
+        width: 100%;
+    }
+
+    .navbar-custom .options {
+        clear: both;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Main Container */
+
+    .main-container {
+        /* top: 16.75rem; */
+    }
+
+    /* footer */
+
+
+    .contacto-footer {
+        width: 10.6rem;
+        margin: 0 auto;
+    }
+
+
+    div.footer-wrapper .social {
+        width: 21.25rem;
+        margin: 0 auto 2rem auto;
+    }
+}
+
+/* Celulares */
+@media only screen and (max-width: 767px) {
+    /* Navbar */
+
+    header {
+
+        border-bottom: 2px solid #2980b9;
+    }
+
+    nav.navbar-custom {
+        height: 26.25rem;
+    }
+
+    #menu-button {
+        display: block;
+    }
+
+    .navbar-custom .logo {
+        width: 100%;
+        height: 4.375rem;
+        text-align: left;
+    }
+
+    .navbar-custom .logo a {
+        margin-left: 1rem;
+    }
+
+    .navbar-custom .options {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navbar-custom .options .navbar-items .navbar-item {
+        clear: both;
+        width: 100%;
+    }
+
+    /* Main Container */
+
+    .main-container {
+        top: 6.26rem;
+    }
+
+    /* Carousel */
+
+    .carousel-caption {
+        height: 40%;
+        bottom: 4rem;
+        padding: .8rem 0 0 0;
+    }
+
+    .carousel-caption h2{
+        font-size: 3rem;
+    }
+
+    /* Parallax */
+
+    div.parallax-info {
+        width: 50%;
+    }
+
+    /* Ubicación */
+
+    #ubicacion .parallax-info {
+        display: none;
+    }
+
+    #map {
+        width: 90%;
+        left: 5%;
+    }
+
+    /* footer */
+    div.footer-wrapper .social {
+        width: 21.25rem;
+        margin: 0 auto 2rem auto;
+    }
+
+    .contacto-footer {
+        width: 21.25rem;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 710px) {
+
+    /* Calibración y Mantenimiento */
+
+    .calibracion .section-wrapper .section-img,
+    #mantenimiento .section-wrapper .section-img {
+        order: 1;
+    }
+
+    .calibracion .section-wrapper .section-text,
+    #mantenimiento .section-wrapper .section-text {
+        order: 2;
+    }
+
+    .section-wrapper .section-text,
+    #personal .section-wrapper .section-text {
+        padding: 3rem 0 1rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    /* Navbar */
+    .navbar-custom .logo p {
+        display: none;
+    }
+
+    /* Productos */
+    #productos .prod-img-top {
+        width: 70%;
+    }
+
+}
