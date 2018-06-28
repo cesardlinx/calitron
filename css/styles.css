@@ -84,18 +84,22 @@ header .telefono-correo ul li:nth-child(1) {
     text-decoration: none;
     color: #fff;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar-custom .logo p {
+.navbar-custom .logo .logo-text p {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0;
-    display: inline-block;
-    line-height: 4.5rem;
+    /* display: inline-block;
+    line-height: 4.5rem; */
 }
 
-.navbar-custom .logo small {
-    font-size: .8rem;
+.navbar-custom .logo .logo-text small {
+    font-size: .7rem;
     display: block;
 }
 
@@ -103,7 +107,6 @@ header .telefono-correo ul li:nth-child(1) {
     display: inline-block;
     width: 4.5rem;
     margin-right: .7em;
-    margin-top: .2em;
     vertical-align: top;
 }
 
@@ -451,6 +454,8 @@ footer {
 
 .footer-wrapper ul.footer-links {
     list-style-type: none;
+    padding-top: 1.3rem;
+
 }
 
 .footer-wrapper ul.footer-links li {
@@ -468,9 +473,16 @@ footer {
     text-decoration: underline;
 }
 
-.footer-wrapper img {
+.footer-wrapper .footer-logo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.footer-wrapper .footer-logo img {
     display: inline-block;
     width: 5rem;
+    width: 100%;
 }
 
 div.footer-wrapper div.contacto div.contacto-item {
