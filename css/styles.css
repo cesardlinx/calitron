@@ -35,10 +35,9 @@ header .telefono-correo {
 header .telefono-correo ul {
     height: 2rem;
     margin: 0;
-
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -54,7 +53,7 @@ header .telefono-correo ul li:nth-child(1) {
 
 /*Navbar*/
 
-.navbar-custom {
+.navbar-calitron {
     background: #fff;
     color: #fff;
     height: 4.375rem;
@@ -71,16 +70,17 @@ header .telefono-correo ul li:nth-child(1) {
 
 /*Logo*/
 
-.navbar-custom .logo {
+.navbar-calitron .logo {
     display: block;
     float: left;
     width: 40%;
     height: 100%;
     background: #2980b9;
     font-size: 1.2rem;
+    border-right: 1px solid #fff;
 }
 
-.navbar-custom .logo a {
+.navbar-calitron .logo a {
     text-decoration: none;
     color: #fff;
     height: 100%;
@@ -90,20 +90,18 @@ header .telefono-correo ul li:nth-child(1) {
     align-items: center;
 }
 
-.navbar-custom .logo .logo-text p {
+.navbar-calitron .logo .logo-text p {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0;
-    /* display: inline-block;
-    line-height: 4.5rem; */
 }
 
-.navbar-custom .logo .logo-text small {
+.navbar-calitron .logo .logo-text small {
     font-size: .7rem;
     display: block;
 }
 
-.navbar-custom .logo img {
+.navbar-calitron .logo img {
     display: inline-block;
     width: 4.5rem;
     margin-right: .7em;
@@ -112,20 +110,19 @@ header .telefono-correo ul li:nth-child(1) {
 
 /*Navbar Menu*/
 
-.navbar-custom .options {
+.navbar-calitron .options {
     float: left;
-    width: 50%;
-    margin-left: 8%;
+    width: 60%;
     background: #fff;
 }
 
-.navbar-custom .options .navbar-items {
+.navbar-calitron .options .navbar-items {
     list-style: none;
     height: 100%;
     overflow: hidden;
 }
 
-.navbar-custom .options .navbar-items .navbar-item {
+.navbar-calitron .options .navbar-items .navbar-item {
     float: left;
     width: 20%;
     height: 4.375rem;
@@ -220,12 +217,21 @@ div.stroke ul li a:hover:after {
     right: 0;
     left: 0;
     height: 30%;
+    bottom:35%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .carousel-caption h2 {
     font-weight: bold;
     font-size: 4rem;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: opacity 300ms ease;
 }
+
 
 /* Parallax */
 
@@ -264,16 +270,20 @@ div.parallax-info p {
     font-size: 1.5rem;
 }
 
-#prod-parallax {
+#productos {
     background-image: url('../img/banner.png');
 }
 
-#empresa {
+#nosotros {
     background-image: url('../img/nuestra-empresa.jpg');
 }
 
 #contacto-parallax {
     background-image: url('../img/local.JPG');
+}
+
+#servicios {
+    background-image: url('../img/servicios.jpg');
 }
 
 /* Estilos generales para las secciones */
@@ -325,26 +335,23 @@ h2.section-title {
     right: 30rem;
 }
 
-
 /* Nuestros Productos */
 
-
-#productos .prod-img-top {
+.productos .prod-img-top {
     display: block;
     width: 100%;
     margin: 0 auto;
 }
 
-#productos .prod-text {
+.productos .prod-text {
     position: relative;
     top: 15rem;
     opacity: 0;
 }
 
-
 /* Calibracion */
 
-.calibracion .section-text ul li{
+#calibracion .section-text ul li{
     margin-bottom: 2rem;
 }
 
@@ -366,15 +373,19 @@ h2.section-title {
     left: 30rem;
 }
 
-/* Empresa */
+/* Nosotros */
 
-#empresa-container article {
+#nosotros {
+    margin-top: 4.375rem;
+}
+
+#empresa article {
     margin-top: 3rem;
     font-size: 1.1rem;
     color: #031623;
 }
 
-#empresa-container article h3 {
+#empresa article h3 {
     font-size: 2rem;
     text-transform: uppercase;
     color: #154c71;
@@ -384,7 +395,11 @@ h2.section-title {
 /* Ubicación */
 
 #ubicacion .parallax-info {
-    padding: 3rem;
+    padding: 2.5rem;
+}
+
+#ubicacion .parallax-info h2 {
+    text-transform: uppercase;
 }
 
 #ubicacion .address {
@@ -412,11 +427,11 @@ h2.section-title {
 
 
 #map {
-    width: 40%;
-    height: 20rem;
+    width: 55%;
+    height: 23rem;
     position: absolute;
-    top: 2.5rem;
-    left: 50%;
+    top: 1rem;
+    left: 42.5%;
 }
 
 .gm-style-iw {
@@ -456,10 +471,6 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-}
-
-.footer-wrapper .footer-logo-links {
-    /* flex: 0 0 15%; */
 }
 
 .footer-wrapper .footer-logo-links > div {
@@ -506,13 +517,11 @@ footer {
 }
 
 .footer-wrapper .social {
-    /* flex: 1 1 20%; */
     padding: 1rem;
     width: 25rem;
 }
 
 div.footer-wrapper div.contacto {
-    /* flex: 1 1 1%; */
     padding: 1rem;
 }
 
@@ -570,18 +579,22 @@ footer .to-top {
 
 @media only screen and (max-width: 991px) {
 
+    header .telefono-correo ul {
+        justify-content: flex-start;
+    }
+
     /* Navbar */
 
-    .navbar-custom {
+    .navbar-calitron {
         height: 8.75rem;
     }
 
-    .navbar-custom .logo {
+    .navbar-calitron .logo {
         height: 4.375rem;
         width: 100%;
     }
 
-    .navbar-custom .options {
+    .navbar-calitron .options {
         clear: both;
         width: 100%;
         margin-left: 0;
@@ -615,7 +628,7 @@ footer .to-top {
 
     /* Navbar */
 
-    nav.navbar-custom {
+    nav.navbar-calitron {
         height: 26.25rem;
     }
 
@@ -623,22 +636,22 @@ footer .to-top {
         display: block;
     }
 
-    .navbar-custom .logo {
+    .navbar-calitron .logo {
         width: 100%;
         height: 4.375rem;
     }
 
-    .navbar-custom .logo a {
+    .navbar-calitron .logo a {
         margin-left: 1rem;
         justify-content: flex-start;
     }
 
-    .navbar-custom .options {
+    .navbar-calitron .options {
         max-height: 0;
         overflow: hidden;
     }
 
-    .navbar-custom .options .navbar-items .navbar-item {
+    .navbar-calitron .options .navbar-items .navbar-item {
         clear: both;
         width: 100%;
     }
@@ -650,12 +663,6 @@ footer .to-top {
     }
 
     /* Carousel */
-
-    .carousel-caption {
-        height: 40%;
-        bottom: 4rem;
-        padding: .8rem 0 0 0;
-    }
 
     .carousel-caption h2{
         font-size: 3rem;
@@ -685,12 +692,12 @@ footer .to-top {
 
     /* Calibración y Mantenimiento */
 
-    .calibracion .section-wrapper .section-img,
+    #calibracion .section-wrapper .section-img,
     #mantenimiento .section-wrapper .section-img {
         order: 1;
     }
 
-    .calibracion .section-wrapper .section-text,
+    #calibracion .section-wrapper .section-text,
     #mantenimiento .section-wrapper .section-text {
         order: 2;
     }
@@ -703,13 +710,20 @@ footer .to-top {
 
 @media only screen and (max-width: 575px) {
     /* Navbar */
-    .navbar-custom .logo .logo-text p,
-    .navbar-custom .logo .logo-text small {
+    .navbar-calitron .logo .logo-text p,
+    .navbar-calitron .logo .logo-text small {
         display: none;
     }
 
+    /* Carousel */
+
+    .carousel-caption {
+        display: none;
+    }
+
+
     /* Productos */
-    #productos .prod-img-top {
+    .productos .prod-img-top {
         width: 70%;
     }
 
