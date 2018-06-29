@@ -245,6 +245,7 @@ div.stroke ul li a:hover:after {
     background-attachment: fixed;
     background-position: center;
     -webkit-backface-visibility: hidden; /*fix para chrome*/
+    backface-visibility: hidden;
 }
 
 
