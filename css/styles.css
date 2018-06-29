@@ -229,7 +229,7 @@ div.stroke ul li a:hover:after {
     font-size: 4rem;
     margin-bottom: 0;
     opacity: 0;
-    transition: opacity 300ms ease;ease;
+    transition: opacity 300ms ease;
 }
 
 
