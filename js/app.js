@@ -155,7 +155,6 @@ function initMap() {
     });
 
     infowindow.open(map, marker);
-
 }
 
 /* Responsive Navbar */
