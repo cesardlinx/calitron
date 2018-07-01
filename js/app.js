@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-    $('.productos-container:eq(1) .productos-lista ul li a').css('color', '#fff');
-    $('.productos-container:eq(1) .productos-lista ul li a').css('textShadow', '#fff 0 0 0');
-
-
     setTimeout(function () {
         $('.carousel-caption h2:eq(0)').css('opacity', '1');
     }, 1000);
