@@ -7,6 +7,8 @@ $(document).ready(function () {
 
     /* Variables for Scroll animations */
     var scrollProductos = true,
+        scrollMision = true,
+        scrollVision = true,
         scrollCalibracion = true,
         scrollMantenimiento = true,
         scrollPersonal = true,
@@ -54,43 +56,49 @@ $(document).ready(function () {
     /* Scroll Animations */
     $(window).on("resize scroll", function () {
 
-        var winHeightAnim = $(window).height();
-        altHeightAnim = winHeightAnim / 2;
-        winHeightAnim = winHeightAnim - winHeightAnim / 3;
+        var mision = document.getElementById('mision');
+        if (mision.getBoundingClientRect().top < 530 && scrollMision == true) {
+            scrollMision = false;
+            $('#mision + p').addClass('slide-up');
+        }
+
+        var vision = document.getElementById('vision');
+        if (vision.getBoundingClientRect().top < 530 && scrollVision == true) {
+            scrollVision = false;
+            $('#vision + p').addClass('slide-up');
+        }
 
         var productos = document.getElementById('productos');
-        if (productos.getBoundingClientRect().top < altHeightAnim && scrollProductos == true) {
+        if (productos.getBoundingClientRect().top < -70 && scrollProductos == true) {
             scrollProductos = false;
-            TweenMax.to($('.productos .prod-text')[0], 0.5, { top: 0, opacity: 1, ease: Circ.easeOut });
-            TweenMax.to($('.productos .prod-text')[1], 0.5, { top: 0, opacity: 1, ease: Circ.easeOut });
-            TweenMax.to($('.productos .prod-text')[2], 0.5, { top: 0, opacity: 1, ease: Circ.easeOut });
+            $('.productos .prod-text').addClass('slide-up');
         }
 
         var calibracion =  document.getElementById('calibracion');
-        if (calibracion.getBoundingClientRect().top < winHeightAnim && scrollCalibracion == true) {
+        if (calibracion.getBoundingClientRect().top < 360 && scrollCalibracion == true) {
             scrollCalibracion = false;
-            TweenMax.to($('#calibracion .section-wrapper .section-img'), 0.5, { left: 0, opacity: 1, ease: Circ.easeOut });
-            TweenMax.to($('#calibracion .section-wrapper .section-text'), 0.5, { right: 0, opacity: 1, ease: Circ.easeOut });
+            $('#calibracion .section-wrapper .section-img').addClass('close-anim');
+            $('#calibracion .section-wrapper .section-text').addClass('close-anim');
         }
 
         var mantenimiento = document.getElementById('mantenimiento');
-        if (mantenimiento.getBoundingClientRect().top < winHeightAnim && scrollMantenimiento == true) {
+        if (mantenimiento.getBoundingClientRect().top < 360 && scrollMantenimiento == true) {
             scrollMantenimiento = false;
-            TweenMax.to($('#mantenimiento .section-wrapper .section-img'), 0.5, { left: 0, opacity: 1, ease: Circ.easeOut });
-            TweenMax.to($('#mantenimiento .section-wrapper .section-text'), 0.5, { right: 0, opacity: 1, ease: Circ.easeOut });
+            $('#mantenimiento .section-wrapper .section-img').addClass('close-anim');
+            $('#mantenimiento .section-wrapper .section-text').addClass('close-anim');
         }
 
         var personal = document.getElementById('personal');
-        if (personal.getBoundingClientRect().top < winHeightAnim && scrollPersonal == true) {
+        if (personal.getBoundingClientRect().top < 360 && scrollPersonal == true) {
             scrollPersonal = false;
-            TweenMax.to($('#personal .section-wrapper .section-img'), 0.6, { left: 0, opacity: 1, ease: Circ.easeOut });
-            TweenMax.to($('#personal .section-wrapper .section-text'), 0.6, { right: 0, opacity: 1, ease: Circ.easeOut });
+            $('#personal .section-wrapper .section-img').addClass('close-anim');
+            $('#personal .section-wrapper .section-text').addClass('close-anim');
         }
 
         var ubicacion = document.getElementById('ubicacion');
-        if (ubicacion.getBoundingClientRect().top < altHeightAnim && scrollUbicacion == true) {
+        if (ubicacion.getBoundingClientRect().top < 360 && scrollUbicacion == true) {
             scrollUbicacion = false;
-            TweenMax.to($('#ubicacion .section-wrapper .address'), 0.5, { top: 0, opacity: 1, ease: Circ.easeOut });
+            $('#ubicacion .section-wrapper .address').addClass('slide-up');
         }
 
 

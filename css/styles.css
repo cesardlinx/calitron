@@ -1,8 +1,8 @@
+@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -35,9 +35,18 @@ header .telefono-correo {
 header .telefono-correo ul {
     height: 2rem;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -64,7 +73,6 @@ header .telefono-correo ul li:nth-child(1) {
 
 .navbar-shadow {
     -webkit-box-shadow: 0px 4px 21px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 4px 21px -1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 4px 21px -1px rgba(0, 0, 0, 0.75);
 }
 
@@ -84,9 +92,18 @@ header .telefono-correo ul li:nth-child(1) {
     text-decoration: none;
     color: #fff;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -134,9 +151,9 @@ header .telefono-correo ul li:nth-child(1) {
     line-height: 70px;
     color: #2980b9;
     font-size: 1rem;
+    -webkit-transition: all ease 300ms;
     transition: all ease 300ms;
     font-family: "Orbitron", Helvetica, sans-serif;
-
 }
 
 .navbar-item .navbar-link:hover {
@@ -178,8 +195,8 @@ div.stroke ul li a:after{
     content: '.';
     background: #2980b9;
     height: 1px;
+    -webkit-transition: all ease 400ms;
     transition: all ease 400ms;
-
 }
 
 div.stroke ul li a:hover:after {
@@ -217,10 +234,17 @@ div.stroke ul li a:hover:after {
     right: 0;
     left: 0;
     height: 30%;
-    bottom:35%;
+    bottom: 35%;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -229,6 +253,7 @@ div.stroke ul li a:hover:after {
     font-size: 4rem;
     margin-bottom: 0;
     opacity: 0;
+    -webkit-transition: opacity 300ms ease;
     transition: opacity 300ms ease;
 }
 
@@ -250,15 +275,21 @@ div.stroke ul li a:hover:after {
 
 
 div.parallax-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: absolute;
     top: 0;
     width: 40%;
     height: 100%;
     background: rgba(41, 128, 185, 0.6);
-
 }
 
 div.parallax-info h2{
@@ -311,9 +342,11 @@ h2.section-title {
 
 .section-wrapper .section-img {
     width: 20rem;
-    position: relative;
-    left: 30rem;
+    -webkit-transform: translateX(4rem);
+    transform: translateX(4rem);
     opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .section-wrapper .section-img img {
@@ -322,8 +355,14 @@ h2.section-title {
 }
 
 .section-wrapper .section-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -332,8 +371,11 @@ h2.section-title {
     font-size: 1.5rem;
     width: 20rem;
     padding-left: 1rem;
-    position: relative;
-    right: 30rem;
+    -webkit-transform: translateX(-4rem);
+    transform: translateX(-4rem);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 /* Nuestros Productos */
@@ -342,36 +384,53 @@ h2.section-title {
     position: relative;
 }
 
+.productos .productos-container img.prod-img-top {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+}
+
 .productos .productos-container .productos-lista {
-    background: #2980b9;
+   background: transparent;
     font-size: 1rem;
-    color: #fff;
-    border-radius: 5%;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     text-align: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    padding: 2rem;
+    padding: 0 2rem;
     opacity: 0;
-    transition: opacity 500ms ease-in-out;
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
 }
 
-.productos .productos-container .productos-lista:hover {
+.productos .productos-container:hover > img.prod-img-top {
+    opacity: 0.3;
+}
+
+.productos .productos-container:hover > .productos-lista {
     opacity: 1;
 }
 
 .productos .productos-container .productos-lista ul {
-    padding: 0.6rem;
+    padding: 0 0.6rem;
 }
 
 .productos .productos-container .productos-lista ul li a {
-    color: #fff;
+    color: #000;
 }
-
 
 .productos .prod-img-top {
     display: block;
@@ -380,10 +439,12 @@ h2.section-title {
 }
 
 .productos .prod-text {
-    position: relative;
-    top: 15rem;
+    -webkit-transform: translateY(2rem);
+    transform: translateY(2rem);
     font-size: 1.1rem;
     opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Calibracion */
@@ -397,17 +458,21 @@ h2.section-title {
 #personal .section-wrapper .section-text {
     font-size: 1.1rem;
     padding: 0 0 1rem 1rem;
+    -webkit-transform: translateX(-10rem);
+    transform: translateX(-10rem);
     opacity: 0;
-    position: relative;
-    right: 30rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 22rem;
     text-align: justify;
 }
 
-#peronsal .section-wrapper .section-img {
+#personal .section-wrapper .section-img {
+    -webkit-transform: translateX(10rem);
+    transform: translateX(10rem);
     opacity: 0;
-    position: relative;
-    left: 30rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Nosotros */
@@ -428,6 +493,14 @@ h2.section-title {
     color: #154c71;
 }
 
+#empresa  p {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
 
 /* Ubicación */
 
@@ -441,9 +514,11 @@ h2.section-title {
 
 #ubicacion .address {
     text-align: left;
-    position: relative;
-    top: 15rem;
+    -webkit-transform: translateY(2rem);
+    transform: translateY(2rem);
     opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 #ubicacion .address h3 {
@@ -505,13 +580,24 @@ footer {
 }
 
 .footer-wrapper .footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
 .footer-wrapper .footer-logo-links > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     margin: 0 auto;
     width: 100%;
@@ -599,6 +685,7 @@ footer .to-top {
     left: 29px;
     text-align: center;
     opacity: 0;
+    -webkit-transition: opacity 500ms ease-in-out;
     transition: opacity 500ms ease-in-out;
 }
 
@@ -609,147 +696,166 @@ footer .to-top {
 }
 
 /***********************
+      ANIMATIONS
+************************/
+
+.productos .prod-text.slide-up {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+}
+
+#ubicacion .section-wrapper .address.slide-up {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+}
+
+#empresa p.slide-up {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+}
+
+.section-wrapper .close-anim {
+    opacity: 1;
+    -webkit-transform: translateX(0rem);
+    transform: translateX(0rem);
+}
+
+#personal .section-wrapper .close-anim {
+    opacity: 1;
+    -webkit-transform: translateX(0rem);
+    transform: translateX(0rem);
+}
+
+/***********************
     RESPONSIVE DESIGN
 ************************/
 
 /* Tablets */
 
 @media only screen and (max-width: 991px) {
-
     header .telefono-correo ul {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
     }
-
     /* Navbar */
-
     .navbar-calitron {
         height: 8.75rem;
     }
-
     .navbar-calitron .logo {
         height: 4.375rem;
         width: 100%;
     }
-
     .navbar-calitron .options {
         clear: both;
         width: 100%;
         margin-left: 0;
     }
-
-     /* Main Container */
-
-     .main-container {
-         top: 10.75rem;
-     }
-
-     /* Productos */
+    /* Main Container */
+    .main-container {
+        top: 10.75rem;
+    }
+    /* Productos */
     .productos .productos-container .productos-lista {
         font-size: .9rem;
     }
-
     /* footer */
-
     div.footer-wrapper .social {
         width: 21.25rem;
     }
 }
 
-@media only screen and (max-width: 941px) {
-    .productos .productos-container .productos-lista:hover {
-        opacity: 0;
+/* Fix navbar en tablets */
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    /* Navbar */
+    .navbar-calitron {
+        max-height: 8.75rem;
     }
 }
 
+
 /* Celulares */
+
 @media only screen and (max-width: 767px) {
-
     /* Header */
-
-    header {
-        border-bottom: 2px solid #2980b9;
-    }
-
-    header .telefono-correo{
+    header .telefono-correo {
         display: none;
     }
-
     /* Navbar */
-
     nav.navbar-calitron {
         height: 26.25rem;
     }
-
     #menu-button {
         display: block;
     }
-
     .navbar-calitron .logo {
         width: 100%;
         height: 4.375rem;
     }
-
     .navbar-calitron .logo a {
         margin-left: 1rem;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
     }
-
     .navbar-calitron .options {
         max-height: 0;
         overflow: hidden;
     }
-
     .navbar-calitron .options .navbar-items .navbar-item {
         clear: both;
         width: 100%;
     }
-
     /* Main Container */
-
     .main-container {
         top: 4.26rem;
     }
-
     /* Carousel */
-
-    .carousel-caption h2{
+    .carousel-caption h2 {
         font-size: 3rem;
     }
-
     /* Parallax */
-
     div.parallax-info {
         width: 50%;
+
+    }
+    /* Productos */
+    .productos .productos-container .productos-lista {
+        font-size: 2rem;
+    }
+
+    .productos .prod-text {
+        font-size: 1.8rem;
     }
 
     /* Ubicación */
-
     #ubicacion .parallax-info {
         display: none;
     }
-
     #map {
         width: 90%;
         left: 5%;
     }
-
-
 }
 
 @media only screen and (max-width: 710px) {
-
     /* Calibración y Mantenimiento */
-
     #calibracion .section-wrapper .section-img,
     #mantenimiento .section-wrapper .section-img {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
         order: 1;
     }
-
     #calibracion .section-wrapper .section-text,
     #mantenimiento .section-wrapper .section-text {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
     }
-
     .section-wrapper .section-text,
     #personal .section-wrapper .section-text {
         padding: 3rem 0 1rem 1rem;
@@ -762,32 +868,23 @@ footer .to-top {
     .navbar-calitron .logo .logo-text small {
         display: none;
     }
-
     /* Carousel */
-
     .carousel-caption {
         display: none;
     }
-
-
     /* Productos */
     .productos .prod-img-top {
         width: 70%;
     }
 
-    .productos .productos-container .productos-lista:hover {
-        opacity: 1;
-    }
-
     .productos .productos-container .productos-lista {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 446px) {
     .productos .productos-container .productos-lista {
-        font-size: .8rem;
-
+        font-size: 1.2rem;
     }
 }
 
@@ -795,22 +892,29 @@ footer .to-top {
 
 @media only screen and (max-width: 823px) and (min-width: 623px) {
     .footer-wrapper .contacto {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
-
     .footer-wrapper .contacto .contacto-item {
         margin: 0 1rem;
     }
 }
 
-
 @media only screen and (max-width: 559px) {
     .footer-wrapper .contacto {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
-
     .footer-wrapper .contacto .contacto-item {
         margin: 0 1rem;
     }
